@@ -1,0 +1,19 @@
+[project]
+name = "library-catalog"
+version = "0.1.0"
+description = "Библиотека книг"
+authors = [
+    {name = "Your Name",email = "you@example.com"}
+]
+readme = "README.md"
+requires-python = "3.14"
+dependencies = [
+    "fastapi (>=0.120.0,<0.121.0)",
+    "pydantic[email] (>=2.12.3,<3.0.0)",
+    "uvicorn[standart] (>=0.38.0,<0.39.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
