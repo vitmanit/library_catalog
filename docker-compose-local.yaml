@@ -1,0 +1,17 @@
+version: "3.0"
+services:
+  db:
+    container_name: "db"
+    image: postgres:17.6-1
+    restart: always
+    environment:
+      - POSTGRES_USER=vitaliy
+      - POSTGRES_PASSWORD=!Admin123
+      - POSTGRES_DB=homework
+    ports:
+      - "5432:5432"
+    networks:
+      - custom
+networks:
+  custom:
+    driver: bridge

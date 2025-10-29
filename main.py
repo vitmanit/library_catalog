@@ -1,3 +1,16 @@
-from fastapi import FastAPI
+import uvicorn
+from fastapi import FastAPI, Path, Query
+from typing import Annotated
 
-app = FastAPI()
+from api.Books import router_books
+
+app = FastAPI(title='Book API')
+
+app.include_router(router_books)
+
+
+
+
+
+if __name__ == "__main__":
+    uvicorn.run(app, host='0.0.0.0', port=8000)
