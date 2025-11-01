@@ -2,9 +2,12 @@ from fastapi import APIRouter, Depends, HTTPException, Query
 from sqlalchemy.ext.asyncio import AsyncSession
 from typing import List, Optional
 from db.connect import get_db
+from json_save.books_json import append_book_to_json
 from models.Books import Book
 from shemas import BookCreate, BookResponse
 from sqlalchemy import select
+from json_save import books_json
+
 
 
 router_books = APIRouter(prefix='/books', tags=['Books'])
@@ -15,6 +18,7 @@ async def add_book(book: BookCreate, db: AsyncSession = Depends(get_db)):
     db.add(db_book)
     await db.commit()
     await db.refresh(db_book)
+    append_book_to_json(book.model_dump())
     return db_book
 
 @router_books.get('/{book_id}', response_model=BookResponse)

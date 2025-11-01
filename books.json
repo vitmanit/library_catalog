@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Проверка Json",
+    "author": "Гарри Поттер",
+    "year_publication": 1999,
+    "genre": "Детектив",
+    "number_pages": 321,
+    "accessibility": true
+  },
+  {
+    "title": "Проверка Json2",
+    "author": "Гарри Поттер",
+    "year_publication": 1999,
+    "genre": "Детектив",
+    "number_pages": 321,
+    "accessibility": true
+  }
+]

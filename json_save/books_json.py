@@ -10,3 +10,6 @@ def append_book_to_json(book_dict: dict):
             books = json.load(f)
     else:
         books = []
+    books.append(book_dict)
+    with open(BOOKS_PATH, "w", encoding="utf-8") as f:
+        json.dump(books, f, ensure_ascii=False, indent=2)
