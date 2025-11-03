@@ -4,11 +4,11 @@ from typing import List, Optional
 from db.connect import get_db
 from json_save.books_json import append_book_to_json
 from models.Books import Book
+from search_info_from_books.search_books import SearchInfo
 from shemas import BookCreate, BookResponse
 from sqlalchemy import select
-from json_save import books_json
-from asyncpg import pool
-
+from json_save import books_json, save_in_jsonbin
+from search_info_from_books import search_books
 
 class BookRepository:
     #Получить книгу по айди
@@ -44,6 +44,9 @@ class BookRepository:
         await db.commit()
         await db.refresh(db_book)
         append_book_to_json(book.model_dump())
+        save_in_jsonbin.add_jsobin(book.model_dump())
+        desc, rating, cover = SearchInfo.additional_info(db_book.title)
+        print(desc, rating, cover)
         return db_book
 
     #Обновить данные о книге

@@ -14,5 +14,117 @@
     "genre": "Детектив",
     "number_pages": 321,
     "accessibility": true
+  },
+  {
+    "title": "Наедине с собой",
+    "author": "Аврелий М",
+    "year_publication": 2023,
+    "genre": "Самоанализ",
+    "number_pages": 150,
+    "accessibility": true
+  },
+  {
+    "title": "Наедине с собой",
+    "author": "Аврелий М",
+    "year_publication": 2023,
+    "genre": "Самоанализ",
+    "number_pages": 150,
+    "accessibility": true
+  },
+  {
+    "title": "Наедине с собой",
+    "author": "Аврелий М",
+    "year_publication": 2023,
+    "genre": "Самоанализ",
+    "number_pages": 150,
+    "accessibility": true
+  },
+  {
+    "title": "Проверка бакета",
+    "author": "Ага",
+    "year_publication": 312312,
+    "genre": "Фантастика",
+    "number_pages": 312,
+    "accessibility": true
+  },
+  {
+    "title": "Проверка бакета",
+    "author": "Ага",
+    "year_publication": 312312,
+    "genre": "Фантастика",
+    "number_pages": 312,
+    "accessibility": true
+  },
+  {
+    "title": "Проверка бакета",
+    "author": "Ага",
+    "year_publication": 312312,
+    "genre": "Фантастика",
+    "number_pages": 312,
+    "accessibility": true
+  },
+  {
+    "title": "Проверка бакета",
+    "author": "Ага",
+    "year_publication": 312312,
+    "genre": "Фантастика",
+    "number_pages": 312,
+    "accessibility": true
+  },
+  {
+    "title": "Проверка бакета",
+    "author": "Ага",
+    "year_publication": 312312,
+    "genre": "Фантастика",
+    "number_pages": 312,
+    "accessibility": true
+  },
+  {
+    "title": "Проверка бакета",
+    "author": "Ага",
+    "year_publication": 312312,
+    "genre": "Фантастика",
+    "number_pages": 312,
+    "accessibility": true
+  },
+  {
+    "title": "Проверка бакета",
+    "author": "Ага",
+    "year_publication": 312312,
+    "genre": "Фантастика",
+    "number_pages": 312,
+    "accessibility": true
+  },
+  {
+    "title": "Harry Potter and the Sorcerer's Stone",
+    "author": "J. K. Rowling",
+    "year_publication": 2016,
+    "genre": "Hardcover",
+    "number_pages": 246,
+    "accessibility": true
+  },
+  {
+    "title": "Harry Potter and the Sorcerer's Stone",
+    "author": "J. K. Rowling",
+    "year_publication": 2016,
+    "genre": "Hardcover",
+    "number_pages": 246,
+    "accessibility": true
+  },
+  {
+    "title": "Harry Potter and the Sorcerer's Stone",
+    "author": "J. K. Rowling",
+    "year_publication": 2016,
+    "genre": "XZ",
+    "number_pages": 2131,
+    "accessibility": true
+  },
+  {
+    "title": "Harry Potter and the Sorcerer's Stone",
+    "author": "J. K. Rowling",
+    "year_publication": 2016,
+    "genre": "XZ",
+    "number_pages": 2131,
+    "accessibility": true
   }
 ]
