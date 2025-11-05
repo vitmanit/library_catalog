@@ -7,7 +7,7 @@ from models.Books import Book
 from search_info_from_books.search_books import SearchInfo
 from shemas import BookCreate, BookResponse
 from sqlalchemy import select
-from json_save import books_json, save_in_jsonbin
+from json_save.save_in_jsonbin import *
 from search_info_from_books import search_books
 
 class BookRepository:
@@ -44,8 +44,8 @@ class BookRepository:
         await db.commit()
         await db.refresh(db_book)
         append_book_to_json(book.model_dump())
-        save_in_jsonbin.add_jsobin(book.model_dump())
-        desc, rating, cover = SearchInfo.additional_info(db_book.title)
+        res = await jsobin.post(book.model_dump())
+        desc, rating, cover = await SearchInfo.get(db_book.title)
         print(desc, rating, cover)
         return db_book
 

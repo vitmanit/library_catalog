@@ -1,30 +1,29 @@
-import requests
+import httpx
+import asyncio
+
+from HTTP_REQUEST.BaseApi import BaseApiClient
 from api import Books
 
-#Добавить книгу
-def add_jsobin(data):
-    url = f'https://api.jsonbin.io/v3/b'
-    headers = {
-      'Content-Type': 'application/json',
-      'X-Master-Key': '$2a$10$Jnw1/tH1QXgtCxLp3fQfiO9h5.gQ34dILvwn9Yk96eiDZOcttQI4y'
-    }
-    requests.post(url, json=data, headers=headers)
+class JsobinCient(BaseApiClient):
+    def __init__(self, api_key: str):
+        self.base_url = 'https://api.jsonbin.io/v3/b'
+        self.headers = {
+            'X-Master-Key': api_key,
+            'Content-Type': 'application/json'
+        }
 
+    #Получить книгу
+    async def get(self, bin_id: str, **kwargs):
+        async with httpx.AsyncClient() as client:
+            response = await client.get(self.base_url + f'/{bin_id}', headers=self.headers, **kwargs)
+            response.raise_for_status()
+            return response.json()
 
-#Обновить книгу
-def update_book(data, bake_id):
-    url = f'https://api.jsonbin.io/v3/b/{bake_id}'
-    headers = {
-      'Content-Type': 'application/json',
-      'X-Master-Key': '$2a$10$Jnw1/tH1QXgtCxLp3fQfiO9h5.gQ34dILvwn9Yk96eiDZOcttQI4y'
-    }
-    requests.put(url, json=data, headers=headers)
+    #Создать книгу
+    async def post(self, data=None, **kwargs):
+        async with httpx.AsyncClient() as client:
+            response = await client.post(self.base_url, headers=self.headers, json=data, **kwargs)
+            response.raise_for_status()
+            return response.json()
 
-#Удалить бакет
-def delete_backet(bake_id):
-    url = f'https://api.jsonbin.io/v3/b/{bake_id}'
-    headers = {
-        'Content-Type': 'application/json',
-        'X-Master-Key': '$2a$10$Jnw1/tH1QXgtCxLp3fQfiO9h5.gQ34dILvwn9Yk96eiDZOcttQI4y'
-    }
-    requests.delete(url, json=None, headers=headers)
+jsobin = JsobinCient(api_key='$2a$10$Jnw1/tH1QXgtCxLp3fQfiO9h5.gQ34dILvwn9Yk96eiDZOcttQI4y')

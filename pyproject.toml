@@ -17,7 +17,8 @@ dependencies = [
     "sqlalchemy (>=2.0.44,<3.0.0)",
     "psycopg[binary] (>=3.2.12,<4.0.0)",
     "asyncpg @ git+https://github.com/MagicStack/asyncpg.git",
-    "requests (>=2.32.5,<3.0.0)"
+    "requests (>=2.32.5,<3.0.0)",
+    "httpx (>=0.28.1,<0.29.0)"
 ]
 
 
