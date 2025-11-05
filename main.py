@@ -4,6 +4,7 @@ from typing import Annotated
 
 from api.Books import router_books
 
+
 app = FastAPI(title='Book API')
 
 app.include_router(router_books)
