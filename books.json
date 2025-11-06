@@ -238,5 +238,45 @@
     "genre": "string",
     "number_pages": 0,
     "accessibility": true
+  },
+  {
+    "title": "Harry Potter and the Prisoner of Azkaban",
+    "author": "string",
+    "year_publication": 0,
+    "genre": "string",
+    "number_pages": 0,
+    "accessibility": true
+  },
+  {
+    "title": "Harry Potter and the Prisoner of Azkaban",
+    "author": "string",
+    "year_publication": 0,
+    "genre": "string",
+    "number_pages": 0,
+    "accessibility": true
+  },
+  {
+    "title": "Harry Potter and the Prisoner of Azkaban",
+    "author": "string",
+    "year_publication": 0,
+    "genre": "string",
+    "number_pages": 0,
+    "accessibility": true
+  },
+  {
+    "title": "Harry Potter and the Prisoner of Azkaban",
+    "author": "string",
+    "year_publication": 0,
+    "genre": "string",
+    "number_pages": 0,
+    "accessibility": true
+  },
+  {
+    "title": "Harry Potter and the Philosopher's Stone",
+    "author": "string",
+    "year_publication": 0,
+    "genre": "string",
+    "number_pages": 0,
+    "accessibility": true
   }
 ]

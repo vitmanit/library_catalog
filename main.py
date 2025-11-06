@@ -1,8 +1,7 @@
 import uvicorn
-from fastapi import FastAPI, Path, Query
-from typing import Annotated
+from fastapi import FastAPI
 
-from api.Books import router_books
+from use_cases.api.Books import router_books
 
 
 app = FastAPI(title='Book API')

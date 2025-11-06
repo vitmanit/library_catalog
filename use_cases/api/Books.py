@@ -1,16 +1,17 @@
 from fastapi import APIRouter, Depends, HTTPException, Query
 from sqlalchemy.ext.asyncio import AsyncSession
 from typing import List, Optional
-from db.connect import get_db
-from json_save.books_json import append_book_to_json
-from models.Books import Book
-from search_info_from_books.search_books import SearchInfo
-from shemas import BookCreate, BookResponse
+from use_cases.db.connect import get_db
+from infrastructure.json_save.books_json_in_file import append_book_to_json
+from domain.models.Books import Book
+from infrastructure.search_info_from_books.search_books import SearchInfo
+from infrastructure.shemas import BookCreate, BookResponse
 from sqlalchemy import select
-from json_save.save_in_jsonbin import *
-from search_info_from_books import search_books
+from infrastructure.json_save.save_in_jsonbin import *
+
 
 class BookRepository:
+
     #Получить книгу по айди
     @staticmethod
     async def get_book(book_id: int, db: AsyncSession):
@@ -45,8 +46,8 @@ class BookRepository:
         await db.refresh(db_book)
         append_book_to_json(book.model_dump())
         res = await jsobin.post(book.model_dump())
-        desc, rating, cover = await SearchInfo.get(db_book.title)
-        print(desc, rating, cover)
+        openlibrary_info = SearchInfo(book.title)
+        desc, rating, cover = await openlibrary_info.get()
         return db_book
 
     #Обновить данные о книге
