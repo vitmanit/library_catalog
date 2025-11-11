@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  api:
+    image: library-catalog:latest
+    secrets:
+      - db_password
+      - api_key
+    environment:
+      DATABASE_PASSWORD_FILE: /run/secrets/db_password
+      JSONBIN_API_KEY_FILE: /run/secrets/api_key
+
+secrets:
+  db_password:
+    external: true
+  api_key:
+    external: true
