@@ -1,15 +1,27 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.middleware.gzip import GZipMiddleware
-
+from contextlib import asynccontextmanager
 from config.settings import get_settings
 from infrastructure.logging.setup import setup_logging
 from presentation.api.exception_handlers import register_exception_handlers
 from presentation.middleware.logging import log_requests_middleware
 from presentation.api.v1 import books, health
+from loguru import logger
 
 settings = get_settings()
 
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # Startup
+    logger.info(
+        "application_started",
+        environment=settings.environment,
+        version=settings.api_version
+    )
+    yield
+    # Shutdown
+    logger.info("application_shutdown")
 
 def create_application() -> FastAPI:
     """Application factory"""
@@ -20,15 +32,15 @@ def create_application() -> FastAPI:
         log_level=settings.log_level
     )
 
-    # Create appSS
-    app = FastAPI(
+    app: FastAPI = FastAPI(
         title=settings.api_title,
         version=settings.api_version,
         description=settings.api_description,
         debug=settings.debug,
         docs_url="/docs" if not settings.is_production else None,
         redoc_url="/redoc" if not settings.is_production else None,
-        openapi_url="/openapi.json" if not settings.is_production else None
+        openapi_url="/openapi.json" if not settings.is_production else None,
+        lifespan=lifespan
     )
 
     # CORS Middleware
@@ -61,24 +73,7 @@ def create_application() -> FastAPI:
         tags=["Health"]
     )
 
-    @app.on_event("startup")
-    async def startup_event():
-        """Startup tasks"""
-        from loguru import logger
-        logger.info(
-            "application_started",
-            environment=settings.environment,
-            version=settings.api_version
-        )
-
-    @app.on_event("shutdown")
-    async def shutdown_event():
-        """Shutdown tasks"""
-        from loguru import logger
-        logger.info("application_shutdown")
-
     return app
-
 
 app = create_application()
 

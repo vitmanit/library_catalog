@@ -5,6 +5,7 @@ from domain.schemas.book import BookCreate, BookResponse
 from infrastructure.external.openlibrary_client import OpenLibraryClient
 from infrastructure.external.jsonbin_client import JsonBinClient
 from infrastructure.repositories.book_repository import get_book_repository
+from infrastructure.external.file_storage_client import FileStorageClient
 
 
 class BookService:
@@ -41,6 +42,8 @@ class BookService:
     async def create_book(self, book_data: BookCreate) -> BookResponse:
         # Создаем книгу в БД
         book = await self.repository.create(book_data)
+        storage = FileStorageClient("books.json")
+        await storage.append_book_async(book_data.model_dump())
 
         # Опционально: получаем доп. информацию
         if self.openlibrary_client:

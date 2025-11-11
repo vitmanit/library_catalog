@@ -4,66 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e85a03c-55e0-443b-a92b-70cfec767d74" name="Changes" comment="">
+    <list default="true" id="9fd9bec0-d7f7-4a09-92c9-66fb4775a9eb" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/services/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/services/book_service.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/environments/development.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/environments/production.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/environments/staging.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose-prod.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/entities/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/entities/book.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/exceptions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/repositories/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/repositories/book_repository.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/schemas/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/schemas/book.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/schemas/pagination.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/cache/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/cache/redis_cache.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/database/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/database/session.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/external/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/external/base_client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/external/file_storage_client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/external/jsonbin_client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/external/openlibrary_client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/logging/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/logging/setup.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/repositories/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/repositories/book_repository.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/presentation/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/presentation/api/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/presentation/api/dependencies.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/presentation/api/exception_handlers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/presentation/api/v1/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/presentation/api/v1/books.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/presentation/api/v1/health.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/presentation/middleware/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/presentation/middleware/logging.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/presentation/middleware/rate_limit.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alembic.ini" beforeDir="false" afterPath="$PROJECT_DIR$/alembic/alembic.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/BaseApi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/models/Books.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/json_save/books_json_in_file.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/json_save/save_in_jsonbin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/search_info_from_books/search_books.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infrastructure/shemas.py" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/library_catalog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/library_catalog.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alembic/alembic.ini" beforeDir="false" afterPath="$PROJECT_DIR$/alembic.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alembic/env.py" beforeDir="false" afterPath="$PROJECT_DIR$/alembic/env.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/services/book_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/application/services/book_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/books.json" beforeDir="false" afterPath="$PROJECT_DIR$/books.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/README" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/env.py" beforeDir="false" afterPath="$PROJECT_DIR$/alembic/env.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/script.py.mako" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/versions/3f65820713fd_create_items_table.py" beforeDir="false" afterPath="$PROJECT_DIR$/alembic/versions/3f65820713fd_create_items_table.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/use_cases/api/Books.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +28,6 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Dockerfile" />
         <option value="Python Script" />
       </list>
     </option>
@@ -81,22 +35,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;vitmanit&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/vitmanit/library_catalog.git&quot;,
-    &quot;accountId&quot;: &quot;3b5499d0-9b81-4c5f-9eb1-2b2ede24eb44&quot;
-  }
-}</component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 8
-}</component>
-  <component name="ProjectId" id="34kgVjOa5wpFp7PHM2pbcPskGRv" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="35KIOoPXFqg0XAoMv8EXJAtuJCd" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -104,26 +46,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.save_in_jsonbin.executor&quot;: &quot;Run&quot;,
-    &quot;Python.search_books.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;#2 on main&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "my-test",
+    "last_opened_file_path": "C:/Users/it-cu/PycharmProjects/library_catalog",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\it-cu\PycharmProjects\library_catalog" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Андрей\PycharmProjects\library_catalog\presentation\api" />
-      <recent name="C:\Users\Андрей\PycharmProjects\library_catalog\alembic" />
-      <recent name="C:\Users\Андрей\PycharmProjects\library_catalog\search_info_from_books" />
+      <recent name="C:\Users\it-cu\PycharmProjects\library_catalog\alembic" />
+      <recent name="C:\Users\it-cu\PycharmProjects\library_catalog" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="library_catalog" />
       <option name="ENV_FILES" value="" />
@@ -146,60 +90,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="search_books" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="library_catalog" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/search_info_from_books" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/search_info_from_books/search_books.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.search_books" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-f69e5c277ee4-cbfc7b97e6b2-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-252.27397.106" />
+        <option value="bundled-python-sdk-4e2b1448bda8-9a97661f3031-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.27397.106" />
       </set>
     </attachedChunks>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1e85a03c-55e0-443b-a92b-70cfec767d74" name="Changes" comment="" />
-      <created>1761763011454</created>
+      <changelist id="9fd9bec0-d7f7-4a09-92c9-66fb4775a9eb" name="Changes" comment="" />
+      <created>1762852307167</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1761763011454</updated>
+      <updated>1762852307167</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/alembic/env.py</url>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
