@@ -1,22 +1,282 @@
 [
   {
-    "title": "Harry Potter and the Order of the Phoenix",
-    "author": "J. K. Rowling",
-    "year_publication": 2007,
-    "genre": "Fiction",
-    "number_pages": 180,
-    "isbn": "0747591261",
-    "accessibility": true,
-    "description": "The hottest day of the summer so far was drawing to a close and a drowsy silence lay over the large, square houses of Privet Drive."
+    "title": "Проверка Json",
+    "author": "Гарри Поттер",
+    "year_publication": 1999,
+    "genre": "Детектив",
+    "number_pages": 321,
+    "accessibility": true
   },
   {
-    "title": "Harry Potter and the Order of the Phoenix",
+    "title": "Проверка Json2",
+    "author": "Гарри Поттер",
+    "year_publication": 1999,
+    "genre": "Детектив",
+    "number_pages": 321,
+    "accessibility": true
+  },
+  {
+    "title": "Наедине с собой",
+    "author": "Аврелий М",
+    "year_publication": 2023,
+    "genre": "Самоанализ",
+    "number_pages": 150,
+    "accessibility": true
+  },
+  {
+    "title": "Наедине с собой",
+    "author": "Аврелий М",
+    "year_publication": 2023,
+    "genre": "Самоанализ",
+    "number_pages": 150,
+    "accessibility": true
+  },
+  {
+    "title": "Наедине с собой",
+    "author": "Аврелий М",
+    "year_publication": 2023,
+    "genre": "Самоанализ",
+    "number_pages": 150,
+    "accessibility": true
+  },
+  {
+    "title": "Проверка бакета",
+    "author": "Ага",
+    "year_publication": 312312,
+    "genre": "Фантастика",
+    "number_pages": 312,
+    "accessibility": true
+  },
+  {
+    "title": "Проверка бакета",
+    "author": "Ага",
+    "year_publication": 312312,
+    "genre": "Фантастика",
+    "number_pages": 312,
+    "accessibility": true
+  },
+  {
+    "title": "Проверка бакета",
+    "author": "Ага",
+    "year_publication": 312312,
+    "genre": "Фантастика",
+    "number_pages": 312,
+    "accessibility": true
+  },
+  {
+    "title": "Проверка бакета",
+    "author": "Ага",
+    "year_publication": 312312,
+    "genre": "Фантастика",
+    "number_pages": 312,
+    "accessibility": true
+  },
+  {
+    "title": "Проверка бакета",
+    "author": "Ага",
+    "year_publication": 312312,
+    "genre": "Фантастика",
+    "number_pages": 312,
+    "accessibility": true
+  },
+  {
+    "title": "Проверка бакета",
+    "author": "Ага",
+    "year_publication": 312312,
+    "genre": "Фантастика",
+    "number_pages": 312,
+    "accessibility": true
+  },
+  {
+    "title": "Проверка бакета",
+    "author": "Ага",
+    "year_publication": 312312,
+    "genre": "Фантастика",
+    "number_pages": 312,
+    "accessibility": true
+  },
+  {
+    "title": "Harry Potter and the Sorcerer's Stone",
     "author": "J. K. Rowling",
-    "year_publication": 2007,
-    "genre": "Fiction",
-    "number_pages": 180,
-    "isbn": "0747591261",
-    "accessibility": true,
-    "description": "The hottest day of the summer so far was drawing to a close and a drowsy silence lay over the large, square houses of Privet Drive."
+    "year_publication": 2016,
+    "genre": "Hardcover",
+    "number_pages": 246,
+    "accessibility": true
+  },
+  {
+    "title": "Harry Potter and the Sorcerer's Stone",
+    "author": "J. K. Rowling",
+    "year_publication": 2016,
+    "genre": "Hardcover",
+    "number_pages": 246,
+    "accessibility": true
+  },
+  {
+    "title": "Harry Potter and the Sorcerer's Stone",
+    "author": "J. K. Rowling",
+    "year_publication": 2016,
+    "genre": "XZ",
+    "number_pages": 2131,
+    "accessibility": true
+  },
+  {
+    "title": "Harry Potter and the Sorcerer's Stone",
+    "author": "J. K. Rowling",
+    "year_publication": 2016,
+    "genre": "XZ",
+    "number_pages": 2131,
+    "accessibility": true
+  },
+  {
+    "title": "Властелин Колец",
+    "author": "Дональд Трамп",
+    "year_publication": 1993,
+    "genre": "Мистика",
+    "number_pages": 321,
+    "accessibility": true
+  },
+  {
+    "title": "Властелин Колец",
+    "author": "Дональд Трамп",
+    "year_publication": 1993,
+    "genre": "Мистика",
+    "number_pages": 321,
+    "accessibility": true
+  },
+  {
+    "title": "Властелин Колец",
+    "author": "Дональд Трамп",
+    "year_publication": 1993,
+    "genre": "Мистика",
+    "number_pages": 321,
+    "accessibility": true
+  },
+  {
+    "title": "Властелин Колец",
+    "author": "Дональд Трамп",
+    "year_publication": 1993,
+    "genre": "Мистика",
+    "number_pages": 321,
+    "accessibility": true
+  },
+  {
+    "title": "Властелин Колец",
+    "author": "Дональд Трамп",
+    "year_publication": 1993,
+    "genre": "Мистика",
+    "number_pages": 321,
+    "accessibility": true
+  },
+  {
+    "title": "Властелин Колец",
+    "author": "Дональд Трамп",
+    "year_publication": 1993,
+    "genre": "Мистика",
+    "number_pages": 321,
+    "accessibility": true
+  },
+  {
+    "title": "Властелин Колец",
+    "author": "Дональд Трамп",
+    "year_publication": 1993,
+    "genre": "Мистика",
+    "number_pages": 321,
+    "accessibility": true
+  },
+  {
+    "title": "string",
+    "author": "string",
+    "year_publication": 0,
+    "genre": "string",
+    "number_pages": 0,
+    "accessibility": true
+  },
+  {
+    "title": "string",
+    "author": "string",
+    "year_publication": 0,
+    "genre": "string",
+    "number_pages": 0,
+    "accessibility": true
+  },
+  {
+    "title": "Alice's Adventures in Wonderland",
+    "author": "string",
+    "year_publication": 0,
+    "genre": "string",
+    "number_pages": 0,
+    "accessibility": true
+  },
+  {
+    "title": "Alice's Adventures in Wonderland",
+    "author": "string",
+    "year_publication": 0,
+    "genre": "string",
+    "number_pages": 0,
+    "accessibility": true
+  },
+  {
+    "title": "Alice's Adventures in Wonderland",
+    "author": "string",
+    "year_publication": 0,
+    "genre": "string",
+    "number_pages": 0,
+    "accessibility": true
+  },
+  {
+    "title": "The Adventures of Sherlock Holmes",
+    "author": "string",
+    "year_publication": 0,
+    "genre": "string",
+    "number_pages": 0,
+    "accessibility": true
+  },
+  {
+    "title": "The Adventures of Sherlock Holmes",
+    "author": "string",
+    "year_publication": 0,
+    "genre": "string",
+    "number_pages": 0,
+    "accessibility": true
+  },
+  {
+    "title": "Harry Potter and the Prisoner of Azkaban",
+    "author": "string",
+    "year_publication": 0,
+    "genre": "string",
+    "number_pages": 0,
+    "accessibility": true
+  },
+  {
+    "title": "Harry Potter and the Prisoner of Azkaban",
+    "author": "string",
+    "year_publication": 0,
+    "genre": "string",
+    "number_pages": 0,
+    "accessibility": true
+  },
+  {
+    "title": "Harry Potter and the Prisoner of Azkaban",
+    "author": "string",
+    "year_publication": 0,
+    "genre": "string",
+    "number_pages": 0,
+    "accessibility": true
+  },
+  {
+    "title": "Harry Potter and the Prisoner of Azkaban",
+    "author": "string",
+    "year_publication": 0,
+    "genre": "string",
+    "number_pages": 0,
+    "accessibility": true
+  },
+  {
+    "title": "Harry Potter and the Philosopher's Stone",
+    "author": "string",
+    "year_publication": 0,
+    "genre": "string",
+    "number_pages": 0,
+    "accessibility": true
   }
 ]
