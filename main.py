@@ -1,89 +1,12 @@
+import uvicorn
 from fastapi import FastAPI
-from fastapi.middleware.cors import CORSMiddleware
-from fastapi.middleware.gzip import GZipMiddleware
-from contextlib import asynccontextmanager
-from config.settings import get_settings
-from infrastructure.logging.setup import setup_logging
-from presentation.api.exception_handlers import register_exception_handlers
-from presentation.middleware.logging import log_requests_middleware
-from presentation.api.v1 import books, health
-from loguru import logger
 
-settings = get_settings()
+from use_cases.api.Books import router_books
 
-@asynccontextmanager
-async def lifespan(app: FastAPI):
-    # Startup
-    logger.info(
-        "application_started",
-        environment=settings.environment,
-        version=settings.api_version
-    )
-    yield
-    # Shutdown
-    logger.info("application_shutdown")
 
-def create_application() -> FastAPI:
-    """Application factory"""
+app = FastAPI(title='Book API')
 
-    # Setup logging
-    setup_logging(
-        environment=settings.environment,
-        log_level=settings.log_level
-    )
-
-    app: FastAPI = FastAPI(
-        title=settings.api_title,
-        version=settings.api_version,
-        description=settings.api_description,
-        debug=settings.debug,
-        docs_url="/docs" if not settings.is_production else None,
-        redoc_url="/redoc" if not settings.is_production else None,
-        openapi_url="/openapi.json" if not settings.is_production else None,
-        lifespan=lifespan
-    )
-
-    # CORS Middleware
-    app.add_middleware(
-        CORSMiddleware,
-        allow_origins=settings.cors_origins,
-        allow_credentials=True,
-        allow_methods=["*"],
-        allow_headers=["*"],
-    )
-
-    # Gzip Middleware
-    app.add_middleware(GZipMiddleware, minimum_size=1000)
-
-    # Custom middleware
-    app.middleware("http")(log_requests_middleware)
-
-    # Exception handlers
-    register_exception_handlers(app)
-
-    # Register routers
-    app.include_router(
-        books.router,
-        prefix=f"{settings.api_v1_prefix}/books",
-        tags=["Books"]
-    )
-    app.include_router(
-        health.router,
-        prefix="/health",
-        tags=["Health"]
-    )
-
-    return app
-
-app = create_application()
+app.include_router(router_books)
 
 if __name__ == "__main__":
-    import uvicorn
-
-    uvicorn.run(
-        "main:app",
-        host="0.0.0.0",
-        port=8000,
-        reload=settings.debug,
-        log_level=settings.log_level.lower()
-    )
+    uvicorn.run(app, host='127.0.0.1', port=8000)

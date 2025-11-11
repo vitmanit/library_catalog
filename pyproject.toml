@@ -1,31 +1,28 @@
-[tool.poetry]
+[project]
 name = "library-catalog"
 version = "0.1.0"
 description = "Библиотека книг"
-authors = ["Vitaliy <you@example.com>"]
+authors = [
+    {name = "Your Name",email = "you@example.com"}
+]
 readme = "README.md"
-packages = [{include = "library_catalog"}]
+requires-python = "3.14"
+dependencies = [
+    "fastapi (>=0.120.0,<0.121.0)",
+    "pydantic[email] (>=2.12.3,<3.0.0)",
+    "uvicorn[standart] (>=0.38.0,<0.39.0)",
+    "envparse (>=0.2.0,<0.3.0)",
+    "psycopg2 (>=2.9.11,<3.0.0)",
+    "alembic (>=1.17.1,<2.0.0)",
+    "sqlalchemy (>=2.0.44,<3.0.0)",
+    "psycopg[binary] (>=3.2.12,<4.0.0)",
+    "asyncpg @ git+https://github.com/MagicStack/asyncpg.git",
+    "requests (>=2.32.5,<3.0.0)",
+    "httpx (>=0.28.1,<0.29.0)",
+    "loguru (>=0.7.3,<0.8.0)",
+    "asyncio (>=4.0.0,<5.0.0)"
+]
 
-[tool.poetry.dependencies]
-python = ">=3.14,<4.0"
-fastapi = ">=0.120.0,<0.121.0"
-pydantic = {version = ">=2.12.3,<3.0.0", extras = ["email"]}
-uvicorn = {version = ">=0.38.0,<0.39.0", extras = ["standard"]} # Исправлено: standart → standard
-envparse = ">=0.2.0,<0.3.0"
-psycopg2 = ">=2.9.11,<3.0.0"
-alembic = ">=1.17.1,<2.0.0"
-sqlalchemy = ">=2.0.44,<3.0.0"
-psycopg = {version = ">=3.2.12,<4.0.0", extras = ["binary"]}
-asyncpg = {git = "https://github.com/MagicStack/asyncpg.git"}
-requests = ">=2.32.5,<3.0.0"
-httpx = ">=0.28.1,<0.29.0"
-loguru = ">=0.7.3,<0.8.0"
-asyncio = ">=4.0.0,<5.0.0" # ⚠️ Это стандартная библиотека Python, её не нужно указывать как зависимость!
-aiofiles = ">=25.1.0,<26.0.0"
-pydantic-settings = ">=2.11.0,<3.0.0"
-tenacity = ">=9.1.2,<10.0.0"
-slowapi = ">=0.1.9,<0.2.0"
-redis = ">=7.0.1,<8.0.0"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
